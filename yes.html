@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./yes_style.css">
+        <style>
+            /* Additional CSS styles */
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f0f0f0; /* Fallback background color */
+                background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjVrZG05YTRoOXo3ZWsxZHQ1cWRnenhtYmlnd2gwajg2aTNxMGt6aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/t3sZxY5zS5B0z5zMIz/giphy-downsized-large.gif'); /* Use provided GIF URL */
+                background-size: cover; /* Adjust background size */
+                background-position: center; /* Center the background image */
+            }
+    
+            .container {
+                width: 80%; /* Adjust container width */
+                padding: 20px; /* Add padding */
+                background-color: rgba(255, 255, 255, 0.8); /* Add semi-transparent white background */
+                border-radius: 10px; /* Add border radius */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow */
+            }
+    
+            /* Animation for header text */
+            @keyframes moveUpDown {
+                0%, 100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-10px); /* Move up */
+                }
+                75%, 25% {
+                    transform: translateY(10px); /* Move down */
+                }
+            }
+    
+            .header_text {
+                font-family: 'Nunito';
+                font-size: 50px;
+                font-weight: bold;
+                color: #333; /* Change text color */
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 0px;
+                animation: moveUpDown 2s ease-in-out infinite; /* Apply animation to header text */
+            }
+    
+            .gif_container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px; /* Add margin */
+            }
+    
+            .gif_container img {
+                max-width: 100%; /* Ensure the GIF image fits container */
+                height: auto; /* Maintain aspect ratio */
+            }
+        </style>
+
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">it's a date!!</h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDZmdHFjY3N4ZHNxb3g4MzV2czVkZnlqNnhuN3Y3NGloNTNteWc2ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jUC2ONqvBC6YMqNWdJ/giphy-downsized-large.gif" alt="Cute animated illustration">
+            </div>
+        </div>
+       
+    </body> 
+</html>
